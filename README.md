@@ -46,13 +46,11 @@ For example:
 [YOLO MODE]: off
 ```
 
-**Realtive paths instead of attachments:** I prefer linking to files and folders with their relative path instead of using the @-syntax, since it's easier to copy/paste the same prompt if needed. Sometimes Cursor doesn't parse the @-attachments as it should, and you will have to go in and edit them, which is a bit frustrating.
-**Project Overview:** I ususally iterate on this with the agent to build a `project_overview.md` placed in a `.notes` folder. I make it describe the most important files (or all files) thoroughly, as well as documenting a high level description of my project. When this is does you can point to it like `[PROJECT OVERVIEW]: .notes/project_overview.md (important information, please read)` or similar.
-**Yolo Mode:**
-
-- ask: The agent will ask you in the beginning if you want to enable "YOLO MODE" or not, you answer with `yes|no`.
-- on: The agent will perform all actions, and work through the steps, with minimal human intervention.
-- off: The agent will stop and ask you if it should procees at strategic places in the process.
-- note: I usually want to be kept in the loop, so I almost always set the YOLO mode to off.
+- **Realtive paths instead of attachments:** I prefer linking to files and folders with their relative path instead of using the @-syntax, since it's easier to copy/paste the same prompt if needed. Sometimes Cursor doesn't parse the @-attachments as it should, and you will have to go in and edit them, which is a bit frustrating.
+- **Project Overview:** I ususally iterate on this with the agent to build a `project_overview.md` placed in a `.notes` folder. I make it describe the most important files (or all files) thoroughly, as well as documenting a high level description of my project. When this is does you can point to it like `[PROJECT OVERVIEW]: .notes/project_overview.md (important information, please read)` or similar. -**Yolo Mode:**
+  - ask: The agent will ask you in the beginning if you want to enable "YOLO MODE" or not, you answer with `yes|no`.
+  - on: The agent will perform all actions, and work through the steps, with minimal human intervention.
+  - off: The agent will stop and ask you if it should procees at strategic places in the process.
+  - note: I usually want to be kept in the loop, so I almost always set the YOLO mode to off.
 
 Off you go! Feel free to fork or submit pull requests, I would love to collaborate.
