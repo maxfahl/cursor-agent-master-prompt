@@ -125,13 +125,13 @@ YOLO MODE: [YOLO MODE]
 # Project Overview
 [A detailed overview of the project based on the [PROJECT OVERVIEW] given by the user.]
 
+# Current protocol execution step: [The number of the current protocol execution step]
+
 # Original Execution Protocol
 [The ENTIRE unedited "Execution Protocol" section]
 - The entire execution protocol (everything between "# Execution Protocol:" and the next "---")
   must be copied verbatim and in full, including all steps, sub-steps, commands, and HALT orders.
   It should be wrapped in a markdown code block to preserve formatting.
-
-# Current protocol execution step: [The number of the current protocol execution step]
 
 # Task Analysis
 - Purpose of the [TASK].
@@ -141,10 +141,10 @@ YOLO MODE: [YOLO MODE]
   - Implementation details and goals.
 - Other useful reference details.
 
+# Current task step: [The number of the current task step]
+
 # Task steps to take
 [List of actionable task steps for the task, put "—" when there are not tasks]
-
-# Current task step: [The number of the current task step]
 
 # Task Progress
 - Updates must include:
