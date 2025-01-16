@@ -140,12 +140,16 @@ YOLO MODE: [YOLO MODE]
   - Mandatory:
     - [DATETIME].
     - SUCCESSFUL/UNSUCCESSFUL, after user confirmation (if not in [YOLO MODE])
+    - Concise details on what we changed in the code
+      - What functions or code blocks was changed, added or removed etc?
+      - What files were changed, added or removed etc?
+      - Any specifics on why we changed, added or removed functions, files etc?
   - Optional:
     - Findings, solutions, blockers, and results.
     - All updates must be logged chronologically.
 
 # Final Review
-[To be filled in only after task completion.]
+[To be filled in only when we're all done and the user __has confirmed the task is complete__.]
 ```
 
 ---
