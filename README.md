@@ -1,4 +1,6 @@
-The **Task Master Prompt** is a systematic way to guide an agent through a project from start to finish. It creates a clear record of every decision and milestone along the way, so you can always see what was done and why.
+# Cursor Agent - Master Prompt
+
+This prompt guides the agent through a task in a systematic way. It creates a clear record of every decision and milestone along the way, so you can always see what was done and why.
 
 **Key Features:**
 
