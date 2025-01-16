@@ -36,12 +36,10 @@
    ```
 
 ## 2. Task File Creation
-1. Create the [TASK FILE], naming it `[TASK_FILE_NAME]_[TASK_IDENTIFIER].md` and placing it in the `.tasks` directory at the root of the project.
-2. Start by adding everything in "Placeholder Definitions", as is, to the [TASK FILE].
-   - This is to ensure any other developer knows what these placeholders mean.
-3. Then add content by filling in the entire "Task File Template" using:
-   - The result form execution step 2
-   - The user-provided input.
+1. Create the [TASK FILE], naming it `[TASK_FILE_NAME]_[TASK_IDENTIFIER].md` and place it in the `.tasks` directory at the root of the project.
+2. The [TASK FILE] should be implemented strictly using the "Task File Template" below.
+   a. Start by adding the contents of the "Task File Template" to the [TASK FILE].
+   b. Adjust the values of all placeholders based on the "User Input" and placeholder terminal commands.
 
 <<< HALT IF NOT [YOLO MODE]: Before continuing, wait for the user to confirm the name and contents of the [TASK FILE] >>>
 
