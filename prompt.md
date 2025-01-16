@@ -26,7 +26,6 @@
 # Execution Protocol:
 
 ## 1. Git Branch Creation
-
 1. Create a new task branch from [MAIN BRANCH]:
    ```
    git checkout -b task/[TASK_IDENTIFIER]_[TASK_DATE_AND_NUMBER]
@@ -38,13 +37,11 @@
    ```
 
 ## 2. Task Analysis
-
 - Examine the [TASK], related code and functionality step-by-step.
 
 <<< HALT IF NOT [YOLO MODE]: Before continuing, wait for user confirmation that your analysis is complete, if not, iterate on this >>>
 
 ## 3. Task File Creation
-
 1. Create the [TASK FILE], naming it `[TASK_FILE_NAME]_[TASK_IDENTIFIER].md` and placing it in the `.tasks` directory at the root of the project.
 2. Start by adding everything in "Placeholder Definitions", as is, to the [TASK FILE].
    - This is to ensure any other developer knows what these placeholders mean.
@@ -55,7 +52,6 @@
 <<< HALT IF NOT [YOLO MODE]: Before continuing, wait for the user to confirm the [TASK FILE] name andcontents >>>
 
 ## **4. Iterate on the Task**
-
 1. Analyze code context fully before changes.
 2. Analyze updates under "Task Progress" in the [TASK FILE] to ensure you don't repeat previous mistakes or unsuccessful changes.
 3. Make changes to the codebase as needed.
@@ -72,7 +68,6 @@
 <<< HALT IF NOT [YOLO MODE]: Before continuing, confirm with the user if the changes where successful or not, if not, iterate on this execution step once more >>>
 
 ## **5. Task Completion**
-
 1. After user confirmation, and if there are changes to commit:
    - Stage all changes EXCEPT the task file:
      ```
@@ -86,7 +81,6 @@
 <<< HALT IF NOT [YOLO MODE]:: Before continuing, ask the user if the [TASK BRANCH] should be merged into the [MAIN BRANCH], if not, proceed to execution step 8 >>>
 
 ## **6. Merge Task Branch**
-
 1. Confirm with the user before merging into [MAIN BRANCH].
 2. If approved:
    - Checkout [MAIN BRANCH]:
@@ -103,7 +97,6 @@
    ```
 
 ## **7. Delete Task Branch**
-
 1. Ask the user if we should delete the [TASK BRANCH], if not, proceed to execution step 8
 2. Delete the [TASK BRANCH]:
    ```
@@ -113,7 +106,6 @@
 <<< HALT IF NOT [YOLO MODE]:: Before continuing, confirm with the user that the [TASK BRANCH] was deleted successfully by looking at `git branch --list | cat` >>>
 
 ## **8. Final Review**
-
 1. Look at everything we've done and fill in the "Final Review" in the [TASK FILE].
 
 <<< HALT IF NOT [YOLO MODE]:: Before we are done, give the user the final review >>>
@@ -124,38 +116,27 @@
 
 ```markdown
 # Context
-
 Task file name: [TASK_FILE_NAME]
 Created at: [DATETIME]
 Created by: [USER_NAME]
+Main branch: [MAIN BRANCH]
+Task Branch: [TASK BRANCH]
 YOLO MODE: [YOLO MODE]
 
 # Task Description
-
 [A detailed description based on the [TASK] given by the user.]
 
 # Project Overview
-
 [A detailed overview of the project based on the [PROJECT OVERVIEW] given by the user.]
 
-# Original Task Template
-
-[The ENTIRE unedited "Task File Template"]
-
-- Copy and paste the ENTIRE unedited "Task File Template" into this section, **including all the details**
-- Surround it with a markdown code block
-- Add "DO NOT REMOVE OR EDIT THIS SECTION" to the bottom of this section, so that it stays for the entire process.
-
 # Original Execution Protocol
-
 [The ENTIRE unedited "Execution Protocol" section]
 
-- Copy and paste the ENTIRE unedited "Execution Protocol" section into this section, **including all the details under each execution step**
-- Surround it with a markdown code block
-- Add "DO NOT REMOVE OR EDIT THIS SECTION" to the bottom of this section, so that it stays for the entire process.
+- The entire execution protocol (everything between "# Execution Protocol:" and the next "---")
+  must be copied verbatim and in full, including all steps, sub-steps, commands, and HALT orders.
+  It should be wrapped in a markdown code block to preserve formatting.
 
 # Task Analysis
-
 - Purpose of the [TASK].
 - Issues identified, including:
   - Problems caused.
@@ -163,34 +144,21 @@ YOLO MODE: [YOLO MODE]
   - Implementation details and goals.
 - Other useful reference details.
 
-# Main branch
-
-[MAIN BRANCH]
-
-# Task Branch
-
-[TASK BRANCH]
-
 # Steps to take
-
-[List of actionable steps for the task]
-
-- Just "—" when there are not tasks
+[List of actionable steps for the task, put "—" when there are not tasks]
 
 # Current execution step: [The number of the current execution step]
 
 # Task Progress
-
 - Updates must include:
   - Mandatory:
     - [DATETIME].
-    - SUCCESSFUL/UNSUCCESSFUL, after user confirmation
+    - SUCCESSFUL/UNSUCCESSFUL, after user confirmation (if not in [YOLO MODE])
   - Optional:
     - Findings, solutions, blockers, and results.
     - All updates must be logged chronologically.
 
 # Final Review
-
 [To be filled in only after task completion.]
 ```
 
