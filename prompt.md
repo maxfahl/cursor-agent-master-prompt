@@ -131,7 +131,6 @@ YOLO MODE: [YOLO MODE]
 
 # Original Execution Protocol
 [The ENTIRE unedited "Execution Protocol" section]
-
 - The entire execution protocol (everything between "# Execution Protocol:" and the next "---")
   must be copied verbatim and in full, including all steps, sub-steps, commands, and HALT orders.
   It should be wrapped in a markdown code block to preserve formatting.
