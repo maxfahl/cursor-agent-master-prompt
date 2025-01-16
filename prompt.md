@@ -19,7 +19,7 @@
 >
 > - A summary of what the global objectives are
 > - Repeat what the execution protocol entails, step-by-step.
-> - If [YOLO MODE] is set to "ask", ask the user if they want to proceed in "YOLO MODE" or not.
+> - If [YOLO MODE] is set to "ask" in "User Input", ask the user if they want to proceed in "YOLO MODE" or not. Otherwise, respect the "on|off" preference.
 
 ---
 
@@ -36,12 +36,7 @@
    git branch --show-current
    ```
 
-## 2. Task Analysis
-- Examine the [TASK], related code and functionality step-by-step.
-
-<<< HALT IF NOT [YOLO MODE]: Before continuing, wait for user confirmation that your analysis is complete, if not, iterate on this >>>
-
-## 3. Task File Creation
+## 2. Task File Creation
 1. Create the [TASK FILE], naming it `[TASK_FILE_NAME]_[TASK_IDENTIFIER].md` and placing it in the `.tasks` directory at the root of the project.
 2. Start by adding everything in "Placeholder Definitions", as is, to the [TASK FILE].
    - This is to ensure any other developer knows what these placeholders mean.
@@ -49,7 +44,13 @@
    - The result form execution step 2
    - The user-provided input.
 
-<<< HALT IF NOT [YOLO MODE]: Before continuing, wait for the user to confirm the [TASK FILE] name andcontents >>>
+<<< HALT IF NOT [YOLO MODE]: Before continuing, wait for the user to confirm the name and contents of the [TASK FILE] >>>
+
+## 3. Task Analysis
+- Examine the [TASK], related code and functionality step-by-step.
+- Fill in any details from the analysis in the [TASK FILE].
+
+<<< HALT IF NOT [YOLO MODE]: Before continuing, wait for user confirmation that your analysis is satisfactory, if not, iterate on this >>>
 
 ## **4. Iterate on the Task**
 1. Analyze code context fully before changes.
