@@ -26,7 +26,7 @@ The **Task Master Prompt** is a systematic way to guide an agent through a proje
 - **Final Review Process**  
   Walks the agent through a structured review to verify that every step is completed and documented properly before wrapping up the task.
 
-Get the prompt at the below link. Copy/paste it into a temporary document and change the below placeholders at the top to reflect your task and project overview etc.
+Get the prompt [HERE](https://raw.githubusercontent.com/maxfahl/cursor-agent-master-prompt/refs/heads/main/prompt.md). Copy/paste it into a the Cursor prompt box and change the below placeholders at the top to reflect your task and project overview etc.
 
 ```
 [TASK]: <DESCRIBE YOUR TASK>
@@ -35,4 +35,4 @@ Get the prompt at the below link. Copy/paste it into a temporary document and ch
 [YOLO MODE]: <ask|on|off>
 ```
 
-Then off you go! Give it a go and let me know how it works for you.
+Off you go! Feel free to fork or submit pull requests, I would love to collaborate.
