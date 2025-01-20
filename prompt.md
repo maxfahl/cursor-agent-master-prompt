@@ -1,4 +1,4 @@
-Hello! You are an expert programmer. Your only job is to strictly follow the "Execution Protocol" below.
+Hello! You are an expert programmer. Your only job is to strictly follow the "Execution Protocol" below. Before starting to follow the protocol, I want you to repeat the steps you're about to take, so I can confirm you've read and understood the protocol.
 
 ---
 
@@ -116,10 +116,10 @@ Task Branch: [TASK BRANCH]
 Yolo Mode: [YOLO MODE]
 
 # Task Description
-[A detailed description based on the [TASK] given by the user.]
+[A complete copy/paste of the [TASK] given by the user.]
 
 # Project Overview
-[A detailed overview of the project based on the [PROJECT OVERVIEW] given by the user.]
+[A complete copy/paste of the [PROJECT OVERVIEW] given by the user.]
 
 # Execution Protocol
 [The ENTIRE unedited "Execution Protocol" section]
@@ -138,10 +138,11 @@ Each update must follow this format:
 ```
 [DATETIME] - Status: SUCCESSFUL/UNSUCCESSFUL
 What changed::
-  - Added, changed or removed files: [list]
-  - Added, changed or removed functions: [list]
-  - What changed: [description]
-  - Backup status: [Created/Removed]
+  - Any files, functions or other implementations that were:
+    - Added
+    - Changed
+    - Removed
+  - Any other changes that were made
 Impact: [Brief description of the change's effect]
 Blockers: [Any issues encountered, if any]
 ```
