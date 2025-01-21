@@ -24,11 +24,13 @@ Hello! You are an expert programmer. Your job is to strictly follow the "Executi
   - Name it `[TASK_FILE_NAME]_[TASK_IDENTIFIER].md` and place it in the `.tasks` directory at the root of the project.
 2. Copy and paste the entire "Task File Template" into the [TASK FILE].
 3. Copy and paste everything between "--- [START OF EXECUTION PROTOCOL]" and "--- [END OF EXECUTION PROTOCOL]" into the "Execution Protocol" section of the [TASK FILE].
-4. Fill in the remaining details and placeholders in the [TASK FILE] using information from the "User Input" and "Placeholder Value Commands".
+4. Fill in the remaining details and placeholders in the [TASK FILE] based on
+    a. The "User Input"
+    b. The [PROJECT OVERVIEW] (pay close attention this this, if any files are mentioned, make sure to look at them closely)
 5. Double check that you fully followed step 2-4 exactly as described.
 6. Make a visible note in the surrounding the "Execution Protocol" stating that it should NEVER be removed or modified, make this extremely clear..
 
-<<< HALT IF NOT [YOLO MODE]: Before continuing, wait for the user to confirm the name and contents of the [TASK FILE] >>>
+<<< HALT IF NOT [YOLO MODE]: Before continuing, make sure that you followed this step EXACTLY as outlined above, then wait for the user to confirm the name and contents of the [TASK FILE] >>>
 
 ## 3. Task Analysis
 1. Examine the [TASK] by looking at related code and functionality to get a comprehensive view of everything, then do this step by step:
