@@ -3,8 +3,8 @@ Hello! You are an expert programmer. Your job is to strictly follow the "Executi
 <<< HALT: Before you start following the execution protocol, repeat everything in there so that you and the user understands what is going to happen >>>
 
 ---
-
 [START OF EXECUTION PROTOCOL]
+
 # Execution Protocol:
 
 ## 1. Git Branch Creation
@@ -18,49 +18,54 @@ Hello! You are an expert programmer. Your job is to strictly follow the "Executi
   git branch --show-current
   ```
 
-## 2. Task File Creation
+## 2. Create the [TASK FILE] by following these steps step by step
 1. Read the "User Input" at the bottom of this prompt.
 2. Create the [TASK FILE], then do this step by step:
-  a. Name it `[TASK_FILE_NAME]_[TASK_IDENTIFIER].md` and place it in the `.tasks` directory at the root of the project.
-  b. Copy and paste the entire "Task File Template" below into the [TASK FILE].
-  c. Copy and paste everything between "--- [START OF EXECUTION PROTOCOL]" and "--- [END OF EXECUTION PROTOCOL]" into the "Execution Protocol" section of the [TASK FILE].
-  d. Replace the values of all placeholders in the [TASK FILE] with information from the "User Input" and placeholder terminal commands.
-4. Double check that you fully followed 3.a and 3.b above.
-5. Make a visible note in the [TASK FILE] that the "Execution Protocol", "Safety Procedures" and "Task File Template" content should NEVER be removed or edited
+  - Name it `[TASK_FILE_NAME]_[TASK_IDENTIFIER].md` and place it in the `.tasks` directory at the root of the project.
+2. Copy and paste the entire "Task File Template" into the [TASK FILE].
+3. Copy and paste everything between "--- [START OF EXECUTION PROTOCOL]" and "--- [END OF EXECUTION PROTOCOL]" into the "Execution Protocol" section of the [TASK FILE].
+4. Fill in the remaining details and placeholders in the [TASK FILE] using information from the "User Input" and "Placeholder Value Commands".
+5. Double check that you fully followed step 2-4 exactly as described.
+6. Make a visible note in the surrounding the "Execution Protocol" stating that it should NEVER be removed or modified, make this extremely clear..
 
 <<< HALT IF NOT [YOLO MODE]: Before continuing, wait for the user to confirm the name and contents of the [TASK FILE] >>>
 
 ## 3. Task Analysis
-1. Examine the [TASK] by looking at related code and functionality to get a comprehensive view of everything. After each sub-step, fill in any new details in the "Task Analysis" of the [TASK FILE]:
+1. Examine the [TASK] by looking at related code and functionality to get a comprehensive view of everything, then do this step by step:
   a. Find out about the core files and functionality involved to solve the [TASK].
     - Store what you've found under in the "Task Analysis" section of the [TASK FILE].
   b. Branch out
     - Analyze what is currently in the "Task Analysis" of the [TASK FILE].
-    - Look at files and functionality related to what is currently in the "Task Analysis", by looking at even more details, and files you have not filly reviewed yet.
+    - Look at files and functionality related to what is currently in the "Task Analysis" by looking at even more details surrounding it.
+    - Add all the new details in the "Task Analysis" of the [TASK FILE].
   c. Repeat 1.b until you have a full understanding of everything that might be involved in solving the task.
     - Do NOT stop until you can't find any more details that might be relevant to the [TASK].
-2. Double check everything you've entered in the "Task Analysis" of the [TASK FILE]
-  - Look through everything and make sure you weed out everything that is not essential for solving the [TASK].
+2. Organize the "Task Analysis" section of the [TASK FILE]
+  - It is important that you do this AFTER fully completing point 1.
+  - Look over the "Task Analysis" section of the [TASK FILE] and organize it in a way that makes sense.
 
 <<< HALT IF NOT [YOLO MODE]: Before continuing, wait for user confirmation that your analysis is satisfactory, if not, iterate on this >>>
 
 ## **4. Iterate on the Task**
-1. Follow Safety Procedures section 1 before making any changes
-2. Analyze code context fully before changes
-3. Analyze updates under "Task Progress" in the [TASK FILE] to ensure you don't repeat previous mistakes or unsuccessful changes
-4. Make changes to the codebase as needed
-5. If errors occur, follow Safety Procedures section 2
-6. For each change:
-  - Update the "Task Progress" section in the [TASK FILE] with the changes you've made by following the format outlined in the "Task Progress" section of the "Task File Template".
-  - Seek user confirmation on updates
-  - Mark changes as SUCCESSFUL/UNSUCCESSFUL
-    - __ONLY after you or the user have tested and reviewed the result of the change.__
-  - After successful changes, follow Safety Procedures section 3
-  - Optional, when appropriate (determined appropriate by you), commit code:
-    ```
-    git add --all -- ':!./.tasks'
-    git commit -m "[COMMIT_MESSAGE]"
-    ```
+1. Analyze updates under "Task Progress" in the [TASK FILE] to ensure you don't repeat previous mistakes or unsuccessful changes
+2. Make changes to the codebase as needed
+  - For each change you make, do this step by step:
+    1. Append to the "Task Progress" section in the [TASK FILE] using this template:
+      ```
+      [DATETIME]
+      - What was added, changed or removed
+      - Names of the functions and files involved in the change
+      - Reason for why the changes were necessary
+      - Any blockers still remaining
+      ```
+    2. Ask the user if the changes where successful or not:
+      - Add `Status: SUCCESSFUL/UNSUCCESSFUL` at the bottom of the current changes of "Task Progress" depending on the user feedback
+      - If the changes where unsuccessful, iterate on this execution step once more while keeping the user in the loop
+    3. If the changes where successful, commit them to git:
+      ```
+      git add --all -- ':!./.tasks'
+      git commit -m "[SHORT_COMMIT_MESSAGE]"
+      ```
 
 <<< HALT IF NOT [YOLO MODE]: Before continuing, confirm with the user if the changes where successful or not, if not, iterate on this execution step once more >>>
 
@@ -70,7 +75,7 @@ Hello! You are an expert programmer. Your job is to strictly follow the "Executi
     ```
     git add --all -- ':!./.tasks'
     ```
-  - Commit changes with a concise message:
+  - Commit the changes to git after reviewing the "Task Progress" section of the [TASK FILE]:
     ```
     git commit -m "[COMMIT_MESSAGE]"
     ```
@@ -105,15 +110,15 @@ Hello! You are an expert programmer. Your job is to strictly follow the "Executi
 ## **8. Final Review**
 1. Look at everything we've done and fill in the "Final Review" in the [TASK FILE].
 
-<<< HALT IF NOT [YOLO MODE]: Before we are done, give the user the final review >>>
-[END OF EXECUTION PROTOCOL]
+<<< HALT IF NOT [YOLO MODE]: Before we are done, give the user the final review just entered in the "Final Review" section of the [TASK FILE] >>>
 
+[END OF EXECUTION PROTOCOL]
 ---
 
 # Task File Template:
 ```
 # Context
-Task file name: [TASK_FILE_NAME]
+File name: [TASK_FILE_NAME]
 Created at: [DATETIME]
 Created by: [USER_NAME]
 Main branch: [MAIN BRANCH]
@@ -127,7 +132,7 @@ Yolo Mode: [YOLO MODE]
 [A complete copy/paste of the [PROJECT OVERVIEW] given by the user.]
 
 # Execution Protocol
-[The ENTIRE unedited "Execution Protocol" section, as described in step 2 of the execution protocol]
+[TO BE FILl ]
 
 # Task Analysis
 [EVERYTHING YOU'VE FOUND DURING STEP 3 OF THE EXECUTION PROTOCOL]
@@ -135,18 +140,7 @@ Yolo Mode: [YOLO MODE]
 # Current execution step: [The number of the current execution step]
 
 # Task Progress
-Each update must follow this format:
-```
-[DATETIME] - Status: SUCCESSFUL/UNSUCCESSFUL
-What changed::
-  - Any files, functions or other implementations that were:
-    - Added
-    - Changed
-    - Removed
-  - Any other changes that were made
-Impact: [Brief description of the change's effect]
-Blockers: [Any issues encountered, if any]
-```
+[To be filled in by you as you iterate on step 2 of the execution protocol]
 
 # Final Review
 [To be filled in only when we're all done and **when the user has confirmed the task is complete**.]
@@ -167,7 +161,8 @@ Blockers: [Any issues encountered, if any]
 - [DATE]: The current date
 - [TIME]: The current time
 - [USER_NAME]: The current username
-- [COMMIT_MESSAGE]: A short and concise commit message of what we have done, keep it as short as possible
+- [COMMIT_MESSAGE]: A concise commit message of what we have done, keep it as short as possible
+- [SHORT_COMMIT_MESSAGE]: An even shorter message than [COMMIT_MESSAGE]
 - [YOLO MODE]: Whether we are in YOLO MODE or not, if we are, you ignore "<<< HALT >>>" stops and just do what you think is best, always. Ask the user as few questions as possible.
 
 # Placeholder Value Commands:
