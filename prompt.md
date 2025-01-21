@@ -22,6 +22,7 @@ Hello! You are an expert programmer. Your job is to strictly follow the "Executi
 1. Read the "User Input" at the bottom of this prompt.
 2. Create the [TASK FILE], then do this step by step:
   - Name it `[TASK_FILE_NAME]_[TASK_IDENTIFIER].md` and place it in the `.tasks` directory at the root of the project.
+  - Do NOT re-use any task files that are already in the `.tasks` directory.
 2. Copy and paste the entire "Task File Template" into the [TASK FILE].
 3. Copy and paste everything between "--- [START OF EXECUTION PROTOCOL]" and "--- [END OF EXECUTION PROTOCOL]" into the "Execution Protocol" section of the [TASK FILE].
   - Make sure that add EVERYTHING, do not skip anything, especially not the "<<< HALT >>>" instructions.
