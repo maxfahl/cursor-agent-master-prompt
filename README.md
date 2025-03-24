@@ -40,7 +40,7 @@ This prompt guides the agent through a task in a systematic way. It creates a cl
 For example:
 
 ```
-[TASK]: Adding a todo item to the list via the form in `RELATIVE_PATH_TO_FILE` does notalways end up successfuly,
+[TASK]: Adding a todo item to the list via the form in `RELATIVE_PATH_TO_FILE` does not work every time,
 can you please help me figure out why it sometimes fails?
 
 [PROJECT OVERVIEW]: PimpMyTask is a todo that... Here's a list of important files and what they do...
